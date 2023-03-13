@@ -16,9 +16,11 @@ function addTask() {
 	TASKS.push(task);
 	console.log(task);
 	const update = function (task) {
-		tasklist_el.innerHTML = tasklist_el.innerHTML + `<div class="task">${task.taskname} <span id="timestamp">${task.timestamp}</span></div>`;
+		tasklist_el.innerHTML = tasklist_el.innerHTML + `<section class="task"><div id="taskname">${task.taskname}</div> <div id="timestamp">${task.timestamp}</div></section>`;
 	}(task);
 }
 
-
+/*
+tasklist_el.innerHTML = tasklist_el.innerHTML + `<div class="task">${task.taskname} <span id="timestamp">${task.timestamp}</span></div>`;
+*/
 

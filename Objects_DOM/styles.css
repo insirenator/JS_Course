@@ -7,7 +7,7 @@
 .background {
 	background-color: #12181B;
 	height: 200vh;
-	padding-top: 1px; 
+	padding: 1px; 
 }
 
 .title {
@@ -21,7 +21,7 @@
 	color: white;
 	text-align: center;
 	font-size: 16px;
-	margin-top: 5%;
+	margin-top: 2em;
 }
 
 .controls {
@@ -45,23 +45,29 @@
 
 .tasklist {
 	color: white;
-	font-size: 18px;
-	margin-top: 1.5em;
+	font-size: 15px;
+	margin-top: 1em;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 }
 
-#timestamp {
-	color:#BEBEBE;
-	font-size: 10px;
-}
-
 .task {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	background-color: #3A3A3A;
-	min-width: 25%;
+	min-width: 50%;
 	border-radius: 8px;
 	padding: 15px;
 	margin-top: 15px;
+
+}
+
+#timestamp {
+	color:#BEBEBE;
+	font-size: 10px;
+	margin-top: 5px;
 }
